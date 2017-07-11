@@ -18,4 +18,4 @@ The solution is quite simple:
 Recursively iterate over numbers from zero until 1000 and sum all that are
 divisible by 3 or 5.
 
-![Solution proof on project euler](./2017-07-11-113659_1274x1401_scrot.png)
+![Solution proof on project euler](https://github.com/vni/projector-algorithms-2017/blob/master/input-exam/loopless35/2017-07-11-113659_1274x1401_scrot.png)
