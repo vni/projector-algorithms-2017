@@ -1,0 +1,50 @@
+# matrix.c
+================================================================================
+[hackerrank](https://www.hackerrank.com/contests/coding-test-1-bits-hyderabad/challenges/spiral-matrix-1)
+
+### Spiral Matrix 1 
+
+Given N, and a N * N numbers , print the the numbers of the matrix
+(in a space separated format) in the spiral order, clockwise starting
+from top left corner.
+
+### Constraints
+
+N <= 100
+
+Input Format
+
+The first line contains N.
+
+N*N matrix follows, i.e the next N lines contain N numbers each.
+
+### Output Format
+
+The list containing elements of matrix in a clockwise spiral order.
+
+### Sample Input
+
+4
+1 2 3 4
+12 13 14 5
+11 16 15 6
+10 9 8 7
+
+### Sample Output
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 
+
+================================================================================
+
+Explanation:
+The general idea of the algorithms is that we are moving clockwise from top left
+corner. For a 4x4 matrix we move 4 right, 3 down, 3 left, 2 up, 2 right, 1 down,
+1 left. Stop. We decrease the number of moves by 1 every time we change direction
+from horizontal to vertical (upward or downward). The initial number of moves is
+N (4 in example).
+
+The code is messy a little bit: lots of debug printfs and some debug functions
+is still there. It is such, because originally I have allocated less memory then
+needed and any printf before Matrix_readin() would hide this problem.
+
+![Solution proof on hackerrank](2017-07-11-111548_1274x1401_scrot.png)
